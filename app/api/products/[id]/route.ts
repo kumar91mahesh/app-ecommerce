@@ -8,7 +8,6 @@ export async function GET(request: NextRequest, { params }: { params: Params }) 
     const { db } = await connectToDb();
     const productId = params.id;
     const product = await db.collection('products').findOne({ id: productId });
-    console.log('product>>', product)
     if (!product) {
         return new Response("Product not found", {
             status: 404,
