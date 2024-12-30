@@ -1,7 +1,5 @@
 
 import { MongoClient, Db, ServerApiVersion } from 'mongodb';
-// immk4653
-//MzgQaT9fDqnRYpIW
 
 let cachedClient: MongoClient | null = null;
 let cacheDb: Db | null = null;
